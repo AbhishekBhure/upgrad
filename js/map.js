@@ -39,7 +39,7 @@ const withId = users.map((user) => {
     ...user,
   };
 });
-// console.log(withId);
+console.log(withId);
 
 const citizens = [
   {
@@ -69,4 +69,4 @@ const seniorCitizens = citizens.map((person) => {
   return person;
 });
 
-console.log(seniorCitizens);
+// console.log(seniorCitizens);
