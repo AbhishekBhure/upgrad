@@ -39,7 +39,7 @@ const sortAgeDesc = (arr) => arr.sort((a, b) => b.age - a.age);
 const sortByName = (arr) =>
   arr.sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0));
 
-// displayList(citizens, sortByName);
+displayList(citizens, sortByName);
 
 const perfumes = [
   {
