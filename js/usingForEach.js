@@ -20,6 +20,6 @@ const books = [
 console.log("My Favourite Books");
 
 // Your code here...
-books.forEach((elem, index) => {
-  console.log(`${index + 1}. ${elem.title} `);
+books.forEach((elem) => {
+  console.log(`${elem.id}. ${elem.title} `);
 });

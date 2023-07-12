@@ -13,3 +13,11 @@
 const isPlaindrome = (word) => word.split("").reverse().join("") === word;
 
 console.log(isPlaindrome("civic") ? `is palindrome` : "not");
+
+const str = "House No. 98, Philip Street, Mangrove Drive, Timberville -800123";
+
+console.log(str.split(", "));
+
+const greet = ["Hello!", "How are you?", "It is so nice to meet you again!"];
+
+console.log(greet.join(", "));

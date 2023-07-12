@@ -13,5 +13,5 @@ for (let i = 1; i <= 6; i++) {
 for (let i = 6; i >= 1; i--) {
   console.log(genStars(i));
 }
-// console.log(randomNums(10));
+console.log(randomNums(10));
 // console.log(iLoveIceCream(["Mango", "Banana", "Chocolate"]));
