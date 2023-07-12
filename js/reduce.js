@@ -1,4 +1,4 @@
-const arr = [1, 2, 3, 4, 5];
+// const arr = [1, 2, 3, 4, 5];
 const reducer = arr.reduce((acc, curr) => acc + curr, 0);
 // console.log(reducer);
 
@@ -67,7 +67,7 @@ console.log(removeDup(myArr));
 
 const char2 = ["a", "b", "c", "a", "a", "c", "d"];
 const removeDupliate = (arr) =>
-  arr.reduce((acc, crr) => (!acc.includes(crr) ? [...acc, crr] : acc), []);
+  arr.reduce((acc, crr) => (acc.includes(crr) ? [...acc, crr] : acc), []);
 
 const char = ["h", "i", "j", "h", "i", "k"];
 // const removeDupliate = (arr) =>
@@ -75,4 +75,6 @@ const char = ["h", "i", "j", "h", "i", "k"];
 //     (acc, crr) => (!acc.some((ele) => ele === crr) ? [...acc, crr] : acc),
 //     []
 //   );
-console.log(removeDupliate(char2));
+// console.log(removeDupliate(char));
+
+const arr = [1, 2, 3, 4, 3, 2, 1];
