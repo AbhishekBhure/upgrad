@@ -31,8 +31,8 @@ const hasSameContents = (arrA, arrB) => {
   ].every((el) => el);
 };
 
-// console.log(
-//   hasSameContents(shoppingList, itemsBought)
-//     ? "All items bought"
-//     : "Items missing..."
-// );
+console.log(
+  hasSameContents(shoppingList, itemsBought)
+    ? "All items bought"
+    : "Items missing..."
+);
