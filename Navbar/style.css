@@ -1,0 +1,39 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+body{
+    background-color: rgb(90, 79, 79);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+nav>ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding-right: 60px;
+    color: white;
+    font-size: 1rem;
+}
+
+nav>ul>li{
+    margin: 0px 20px;
+    padding: 0px 10px;
+}
+
+input[type = text]{
+    width: 200px;
+    height: auto;
+    /* padding: 5px 10p x; */
+}
