@@ -62,3 +62,7 @@ console.log(dateDiff(dateA, dateB, "M"));
 //     `Diff between ${d1} and ${d2} is ${dateDiff(dateD1, dateD2, "D")}`
 //   );
 // });
+
+let num = 0.1 + 0.2;
+console.log(parseFloat(num));
+console.log(0.1 + 0.2 == 0.3);
