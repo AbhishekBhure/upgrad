@@ -24,3 +24,7 @@ console.log(
     30
   ).toLocaleString()}`
 );
+
+let now = new Date("4 August, 2023 1:00:00");
+console.log(now.getHours());
+console.log(now.getSeconds());
