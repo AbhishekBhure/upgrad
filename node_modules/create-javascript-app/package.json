@@ -1,0 +1,60 @@
+{
+  "name": "create-javascript-app",
+  "version": "0.4.0",
+  "private": false,
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.1.2",
+    "eslint": "^3.19.0",
+    "mocha": "^4.0.1",
+    "react-scripts": "0.9.5",
+    "standard": "^10.0.1",
+    "standard-version": "^4.0.0"
+  },
+  "dependencies": {
+    "config": "^1.25.1",
+    "debug": "^2.6.3",
+    "fs-extra": "^4.0.2",
+    "yargs": "^10.0.3"
+  },
+  "scripts": {
+    "link": "sudo npm link",
+    "unlink": "sudo npm unlink",
+    "publish": "npm publish",
+    "release": "standard-version",
+    "start-dev": "yarn compile && yarn unlink && yarn link && create-javascript-app --help",
+    "start": "create-javascript-app --help",
+    "build": "babel lib -d scripts",
+    "compile": "yarn build",
+    "test": "./test/test.sh"
+  },
+  "bin": {
+    "create-javascript-app": "scripts/init.js"
+  },
+  "description": "**CREATE JS APP**",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashanthr/create-js-app.git"
+  },
+  "keywords": [
+    "js",
+    "react",
+    "node",
+    "redux",
+    "create-react-app",
+    "create-js-app",
+    "create-javascript-app"
+  ],
+  "author": "Prashanth Rajaram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashanthr/create-js-app/issues"
+  },
+  "homepage": "https://github.com/prashanthr/create-js-app#readme"
+}

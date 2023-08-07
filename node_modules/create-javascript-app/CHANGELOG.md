@@ -1,0 +1,119 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/prashanthr/create-js-app/compare/v0.3.8...v0.4.0) (2018-10-21)
+
+
+### Features
+
+* **messages:** Unify messages ([e741c0a](https://github.com/prashanthr/create-js-app/commit/e741c0a))
+* **template:** Upgrade the cra template and babel ([8171d75](https://github.com/prashanthr/create-js-app/commit/8171d75))
+* **upgrade:** Upgrade dev dependencies. ([04f6e85](https://github.com/prashanthr/create-js-app/commit/04f6e85))
+
+
+
+<a name="0.3.8"></a>
+## [0.3.8](https://github.com/prashanthr/create-js-app/compare/v0.3.7...v0.3.8) (2017-11-19)
+
+
+### Bug Fixes
+
+* **template-path:** Fixed incorrect source template path ([b00c7db](https://github.com/prashanthr/create-js-app/commit/b00c7db))
+
+
+
+<a name="0.3.7"></a>
+## [0.3.7](https://github.com/prashanthr/create-js-app/compare/v0.3.6...v0.3.7) (2017-11-19)
+
+
+### Bug Fixes
+
+* **readme:** Updated readme. ([e7356fd](https://github.com/prashanthr/create-js-app/commit/e7356fd))
+
+
+
+<a name="0.3.6"></a>
+## [0.3.6](https://github.com/prashanthr/create-js-app/compare/v0.3.5...v0.3.6) (2017-11-12)
+
+
+
+<a name="0.3.5"></a>
+## [0.3.5](https://github.com/prashanthr/create-js-app/compare/v0.3.3...v0.3.5) (2017-11-12)
+
+
+### Bug Fixes
+
+* **package:** Default target path fix. ([4b30993](https://github.com/prashanthr/create-js-app/commit/4b30993))
+
+
+
+<a name="0.3.4"></a>
+## [0.3.4](https://github.com/prashanthr/create-js-app/compare/v0.3.3...v0.3.4) (2017-11-12)
+
+
+### Bug Fixes
+
+* **package:** Default target path fix. ([4b30993](https://github.com/prashanthr/create-js-app/commit/4b30993))
+
+
+
+<a name="0.3.3"></a>
+## [0.3.3](https://github.com/prashanthr/create-js-app/compare/v0.3.2...v0.3.3) (2017-11-12)
+
+
+
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/prashanthr/create-js-app/compare/v0.3.1...v0.3.2) (2017-11-12)
+
+
+
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/prashanthr/create-js-app/compare/v0.3.0...v0.3.1) (2017-11-12)
+
+
+
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/prashanthr/create-js-app/compare/v0.2.1...v0.3.0) (2017-11-12)
+
+
+### Features
+
+* **npm-scope:** Change scope to public ([506ed0b](https://github.com/prashanthr/create-js-app/commit/506ed0b))
+
+
+
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/prashanthr/create-js-app/compare/v0.2.0...v0.2.1) (2017-11-12)
+
+
+
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/prashanthr/create-js-app/compare/v0.1.4...v0.2.0) (2017-11-12)
+
+
+### Features
+
+* **npm:** Add npm link and scripts ([bbf414c](https://github.com/prashanthr/create-js-app/commit/bbf414c))
+* **test:** Add mocha,chai,tests,scripts and travis.yml ([0d98a25](https://github.com/prashanthr/create-js-app/commit/0d98a25))
+
+
+
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/prashanthr/create-js-app/compare/v0.1.3...v0.1.4) (2017-05-03)
+
+
+
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/prashanthr/create-js-app/compare/v0.1.2...v0.1.3) (2017-05-03)
+
+
+
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/prashanthr/create-js-app/compare/v0.1.1...v0.1.2) (2017-05-03)
+
+
+
+<a name="0.1.1"></a>
+## 0.1.1 (2017-04-16)
