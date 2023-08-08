@@ -22,4 +22,15 @@ let fruits = ["Apples", "Kiwi", "Strawberries"];
 let veggies = ["Potato", "Bell Peppers", "Broccoli"];
 let kitchenBasket = [fruits, ...veggies];
 
-console.log(kitchenBasket);
+// console.log(kitchenBasket);
+
+// console.log(NaN === NaN);
+// console.log(undefined === null);
+// console.log(0 == false);
+console.log(NaN == 0); //According to the IEEE 754 standard, any comparison involving NaN always returns false, even when comparing NaN to itself.
+
+console.log(typeof 0); //numbner
+console.log(typeof false); //boolean
+console.log(typeof NaN); //number
+console.log(typeof undefined); //undefine
+console.log(typeof null); //object
