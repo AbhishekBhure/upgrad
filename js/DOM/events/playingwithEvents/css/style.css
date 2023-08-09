@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.box {
+  position: relative;
+  border: 1px solid;
+  width: 500px;
+  height: 500px;
+  top: 20px;
+  left: 20px;
+}
+
+.ladybird {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transform: rotate(0deg);
+  width: 50px;
+  height: 50px;
+  background-image: url('../img/ladybird.png');
+  background-size: cover;
+  background-position-x: -5px;
+}
+
+.control-buttons {
+  position: relative;
+  top: 40px;
+  left: 45px;
+  width: 450px;
+}
+
+.control-buttons > button {
+  font-size: 30px;
+  width: 50px;
+  margin: 5px;
+}
