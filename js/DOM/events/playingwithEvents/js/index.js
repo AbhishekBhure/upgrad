@@ -60,7 +60,23 @@ turnClockWiseBtn.addEventListener("click", turnClockWise);
 turnAntiClockWiseBtn.addEventListener("click", turnAntiClockWise);
 homeBtn.addEventListener("click", home);
 
+const keyBoardKeys = {
+  ArrowUp: stepUp,
+  ArrowDown: stepDown,
+  ArrowRight: stepRight,
+  ArrowLeft: stepLeft,
+  "]": turnClockWise,
+  "[": turnAntiClockWise,
+  H: home,
+  h: home,
+};
+
 document.addEventListener("keydown", function (event) {
+  const { key } = event;
+  keyBoardKeys[key]();
+});
+
+// document.addEventListener("keydown", function (event) {
 //   const { key } = event;
 //   switch (key) {
 //     case "ArrowUp":
