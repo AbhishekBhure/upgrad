@@ -4,6 +4,7 @@ import {
   removeItem,
   addToCompletedList,
   clearCompleted,
+  bootUp,
 } from "./model";
 import { renderShoppingList, renderCompletedList } from "./view";
 
@@ -80,3 +81,10 @@ clearCompletedBtn.addEventListener("click", function (evt) {
   clearCompleted();
   renderCompletedList();
 });
+
+//Immediatly invoked function expression (IIFE)
+(() => {
+  bootUp();
+  renderShoppingList();
+  renderCompletedList();
+})();

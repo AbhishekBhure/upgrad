@@ -117,13 +117,38 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/model.js":[function(require,module,exports) {
+})({"js/storage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.setPriority = exports.removeItem = exports.getShoppingList = exports.getCompletedList = exports.clearCompleted = exports.addToShoppingList = exports.addToCompletedList = void 0;
+exports.saveStore = exports.getFromStore = void 0;
+const saveStore = function ({
+  shoppingList,
+  completedList
+}) {
+  window.localStorage.setItem("shoppingApp_active", JSON.stringify(shoppingList));
+  window.localStorage.setItem("shoppingApp_completed", JSON.stringify(completedList));
+};
+exports.saveStore = saveStore;
+const getFromStore = function () {
+  const getActive = window.localStorage.getItem("shoppingApp_active");
+  const getCompleted = window.localStorage.getItem("shoppingApp_completed");
+  return {
+    active: getActive ? JSON.parse(getActive) : [],
+    completed: getCompleted ? JSON.parse(getCompleted) : []
+  };
+};
+exports.getFromStore = getFromStore;
+},{}],"js/model.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.setPriority = exports.removeItem = exports.getShoppingList = exports.getCompletedList = exports.clearCompleted = exports.bootUp = exports.addToShoppingList = exports.addToCompletedList = void 0;
+var _storage = require("./storage");
 let shoppingList = [];
 let completedList = [];
 const addToShoppingList = item => {
@@ -132,6 +157,10 @@ const addToShoppingList = item => {
     id: itemId,
     item,
     priority: "normal"
+  });
+  (0, _storage.saveStore)({
+    shoppingList,
+    completedList
   });
 };
 exports.addToShoppingList = addToShoppingList;
@@ -147,12 +176,20 @@ const setPriority = (itemId, priority) => {
     }
     return item;
   });
+  (0, _storage.saveStore)({
+    shoppingList,
+    completedList
+  });
 };
 exports.setPriority = setPriority;
 const removeItem = itemId => {
   shoppingList = shoppingList.filter(({
     id
   }) => id !== itemId);
+  (0, _storage.saveStore)({
+    shoppingList,
+    completedList
+  });
 };
 exports.removeItem = removeItem;
 const addToCompletedList = itemId => {
@@ -163,15 +200,32 @@ const addToCompletedList = itemId => {
     id
   }) => id !== itemId);
   completedList = [getItem, ...completedList];
+  (0, _storage.saveStore)({
+    shoppingList,
+    completedList
+  });
 };
 exports.addToCompletedList = addToCompletedList;
 const getCompletedList = () => completedList;
 exports.getCompletedList = getCompletedList;
 const clearCompleted = () => {
-  return completedList = [];
+  completedList = [];
+  (0, _storage.saveStore)({
+    shoppingList,
+    completedList
+  });
 };
 exports.clearCompleted = clearCompleted;
-},{}],"js/Item.js":[function(require,module,exports) {
+const bootUp = () => {
+  const {
+    active,
+    completed
+  } = (0, _storage.getFromStore)();
+  shoppingList = active;
+  completedList = completed;
+};
+exports.bootUp = bootUp;
+},{"./storage":"js/storage.js"}],"js/Item.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -294,6 +348,13 @@ clearCompletedBtn.addEventListener("click", function (evt) {
   (0, _model.clearCompleted)();
   (0, _view.renderCompletedList)();
 });
+
+//Immediatly invoked function expression (IIFE)
+(() => {
+  (0, _model.bootUp)();
+  (0, _view.renderShoppingList)();
+  (0, _view.renderCompletedList)();
+})();
 },{"./model":"js/model.js","./view":"js/view.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
