@@ -31,7 +31,7 @@ shoppingListDiv.addEventListener("click", function (evt) {
     const priority = evt.target.classList.value;
     const itemId =
       evt.target.parentElement.parentElement.getAttribute("data-id");
-    console.log(itemId, priority);
+    // console.log(itemId, priority);
 
     //Set priority
     setPriority(itemId, priority);

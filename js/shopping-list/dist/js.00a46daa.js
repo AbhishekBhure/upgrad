@@ -303,7 +303,7 @@ shoppingListDiv.addEventListener("click", function (evt) {
     //Priority
     const priority = evt.target.classList.value;
     const itemId = evt.target.parentElement.parentElement.getAttribute("data-id");
-    console.log(itemId, priority);
+    // console.log(itemId, priority);
 
     //Set priority
     (0, _model.setPriority)(itemId, priority);
