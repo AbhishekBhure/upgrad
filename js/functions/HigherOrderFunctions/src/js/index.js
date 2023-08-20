@@ -27,7 +27,7 @@ const currencyConvert = (currency, rates, fn) => {
 const computeCart = function () {
   const currency = this?.value;
   currencyConvert(currency, currencyRates, renderRows)(cart);
-  currencyConvert(currency, currencyRates, renderTotals)(cart);
+  // currencyConvert(currency, currencyRates, renderTotals)(cart);
   //   renderRows(cart);
   //   renderTotals(cart);
 };
