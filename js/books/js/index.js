@@ -1,44 +1,37 @@
-let allBooks = [
-  {
-    id: 1,
-    title: "The Alchemist",
-    author: "Paulo Coelho",
-    rating: [4.5, 4.7, 4.9],
-    reviews: [
-      { username: "Jane", content: "skjsidknkjnoidc cndcnjcjk" },
-      { username: "Horse", content: "skjsidknkjnoidc cndcjk" },
-      { username: "dog", content: "skjsidknkjnoidnjcjk" },
-    ],
-    year: 1988,
-  },
-];
-
-function Book(title, author, year) {
+function Book(title, author, rating) {
   this.title = title;
   this.author = author;
-  this.year = year;
-  this.rating = [];
+
+  this.rating = rating;
   this.reviews = [];
   this.id = Date.now().toString();
 }
 
 const BookCollection = {
-  books: [],
+  books: JSON.parse(localStorage.getItem("books")) || [],
 
   //Add a new book
-  addBook: function (book) {
+  addBook: function () {
+    let bookTitle = document.getElementById("booktitle").value;
+    let bookAuthor = document.getElementById("author").value;
+    let rating = document.getElementById("rating").value;
+    let book = new Book(bookTitle, bookAuthor, rating);
     this.books.push(book);
-    console.log(`Book ${book.title} added successfully with ID ${book.id}`);
+    this.displayBook(this.books);
+    removeBook();
+    saveData();
   },
 
   //Remove a Book
   removeBook: function (removeId) {
     let bookToBeRemoved = this.books.findIndex((book) => book.id === removeId);
     if (bookToBeRemoved == -1) {
-      console.log(`No Such Book with ${removeId} found in collection`);
+      document.getElementsByClassName("userMessage").innerText =
+        "No Book Found";
     } else {
       let removedBook = this.books.splice(bookToBeRemoved, 1);
-      console.log(`The book ${removedBook[0].title} is reoved`);
+      console.log(removedBook);
+      this.displayBook(this.books);
     }
   },
 
@@ -46,55 +39,64 @@ const BookCollection = {
   searchBook: function (title) {
     let filteredBooks = this.books.filter((book) => book.title.includes(title));
     if (filteredBooks.length === 0) {
-      console.log(`No Books Find with the ${title} `);
+      document.getElementsByClassName("userMessage").innerText =
+        "No Books found";
     } else {
-      console.log(`Here's What we found:`);
-      filteredBooks.forEach((book) =>
-        console.log(
-          `${book.title} realsed in the  year ${book.year} written by ${book.author}`
-        )
-      );
+      this.displayBook(filteredBooks);
     }
   },
 
-  //Add ratings
-  let addRating = 
+  //display Books
+  displayBook: function (inputArray) {
+    let content = "";
+
+    inputArray.forEach((book) => {
+      let indiviualBook = `<div>
+      <h2>title:${book.title}</h2>
+      <h2>author:${book.author}</h2>
+      <h2>rating:${book.rating}</h2>
+      <button class="removeBtn" id="${book.id}">Remove</button>
+      </div>`;
+      content += indiviualBook;
+    });
+
+    document.getElementById("allbooks").innerHTML = content;
+  },
 };
 
-let choice = -1;
+BookCollection.displayBook(BookCollection.books);
 
-do {
-  console.log(
-    "Choose an option: \n1. Add a new book\n2. Remove an existing book\n3. Search an existing book\n4. Add rating\n5. Add a rating\n6.Compute all the ratings\n7. Exit "
-  );
+//Adding eventListener to Add book
+let addBtn = document.getElementById("addBtn");
+addBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  BookCollection.addBook();
+});
 
-  choice = parseInt(prompt("Enter your choice: "));
-  switch (choice) {
-    case 1:
-      let title = prompt("Enter the title of the book: ");
-      let author = prompt("Enter the author of the book: ");
-      let year = prompt("Enter the year of the book: ");
-      let newBook = new Book(title, author, year);
-      BookCollection.addBook(newBook);
-      break;
-    case 2:
-      let removeId = prompt("Enter the Id to be removed");
-      BookCollection.removeBook(removeId);
-      break;
-    case 3:
-      let searchTitle = prompt("Enter Title:");
-      BookCollection.searchBook(searchTitle);
-      break;
-    case 4:
-      break;
-    case 5:
-      break;
-    case 6:
-      break;
-    case 7:
-      break;
-    default:
-      console.log("Thank you!!");
-      break;
-  }
-} while (choice >= 1 && choice < 7);
+//removing book
+// let removeBook = document.getElementById("");
+// removeBook.addEventListener("click", (e) => {
+//   BookCollection.removeBook(e.target.id);
+// });
+
+//removeBtn
+function removeBook(books) {
+  let allRemoveBtn = document.querySelectorAll(".removeBtn");
+  console.log(allRemoveBtn);
+  allRemoveBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+      BookCollection.removeBook(button.id);
+    });
+  });
+}
+
+//search
+let search = document.getElementById("search");
+search.addEventListener("change", () => {
+  BookCollection.searchBook(search.value);
+});
+
+//local storage
+function saveData() {
+  localStorage.setItem("books", JSON.stringify(BookCollection.books));
+}

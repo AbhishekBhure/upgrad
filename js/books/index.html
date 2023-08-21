@@ -8,6 +8,30 @@
 </head>
 
 <body>
+    <h1>Book Library</h1>
+    <h3 class="userMessage"></h3>
+    <section id="addbook">
+        <h2>Add Book</h2>
+        <hr>
+        <form action="">
+            <label>Add Book Title: </label>
+            <input id="booktitle" type="text" placeholder="addtitle" minlength="2" required>
+            <br><br>
+            <label> Add Author: </label>
+            <input id="author" type="text" placeholder="add author" minlength="2" required>
+            <br><br>
+            <label> Ratings:</label>
+            <input id="rating" type="number" max="5" min="0">
+            <br><br>
+            <button id="addBtn">Add</button>
+        </form>
+    </section>
+    <section id="booklist">
+        <h2>Book List</h2>
+        <input id="search" type="text" placeholder="search a book">
+        <hr>
+        <div id="allbooks"></div>
+    </section>
 
     <script src="./js/index.js"></script>
 </body>
