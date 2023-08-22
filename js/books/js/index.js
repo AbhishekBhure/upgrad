@@ -18,7 +18,6 @@ const BookCollection = {
     let book = new Book(bookTitle, bookAuthor, rating);
     this.books.push(book);
     this.displayBook(this.books);
-    removeBook();
     saveData();
   },
 
@@ -89,6 +88,7 @@ function removeBook(books) {
     });
   });
 }
+removeBook();
 
 //search
 let search = document.getElementById("search");
