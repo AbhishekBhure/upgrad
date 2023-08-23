@@ -193,21 +193,28 @@ const prepCurry = fn => function curry(...args) {
 };
 const totalCostCurry = prepCurry(totalCost);
 const taxes = {
-  tax12: totalCostCurry(12),
-  tax18: totalCostCurry(18)
+  tax12: totalCostCurry.bind(null, 12),
+  //totalCostCurry(12)
+  tax18: totalCostCurry.bind(null, 18) //totalCostCurry(18)
 };
+
 const shipping = {
-  petfood: taxes.tax12(2.5),
-  smartphones: taxes.tax12(5),
-  televisions: taxes.tax18(15)
+  petfood: taxes.tax12.bind(null, 2.5),
+  //taxes.tax12(2.5)
+  smartphones: taxes.tax12.bind(null, 5),
+  //taxes.tax12(5)
+  televisions: taxes.tax18.bind(null, 15) //taxes.tax12(15)
 };
+
 (function () {
   const reviseData = _data.default.map(item => {
     return {
       ...item,
-      totalCost: !item.shipping ? shipping[item.category](item.cost) : ["smartphones", "petfood"].includes(item.category) ? taxes.tax12(item.shipping)(item.cost) : taxes.tax18(item.shipping)(item.cost)
+      totalCost: !item.shipping ? shipping[item.category](item.cost) : ["smartphones", "petfood"].includes(item.category) ? taxes.tax12(item.shipping, item.cost) //taxes.tax12(item.shipping)(item.cost)
+      : taxes.tax18(item.shipping, item.cost) // taxes.tax18(item.shipping)(item.cost)
     };
   });
+
   renderRows(reviseData);
 })();
 
