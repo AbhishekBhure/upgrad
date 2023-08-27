@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .clock{
     background: gray url('./clock.png') no-repeat center ;
      height: 35em;
@@ -5,6 +12,7 @@
     border-radius: 50%;
     border: 2px solid black;
     position: relative;
+    margin: auto;
 }
 
 .clock::after{
