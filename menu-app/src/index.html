@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your JavaScript Playground</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <header>
+
+      <h1 class="heading">Our Menu</h1>
+      <div class="headUnderline"></div>
+
+      <button id="cart">
+        <img id="cartImg" src="./img/cart.svg" alt="cart"><span id="cartLength"></span>
+      </button>
+
+      <div id="allBtn">
+        <button class="categoryBtn">All</button>
+        <button class="categoryBtn">Breakfast</button>
+        <button class="categoryBtn">Lunch</button>
+        <button class="categoryBtn">Beverages</button>
+        <button class="categoryBtn">Dinner</button>
+      </div>
+    </header>
+    <section id="allDishes">
+    </section>
+    <hr>
+    <h1 class="heading">Your Cart</h1>
+    <div class="headUnderline"></div>
+    <section id="cartSection">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+      </table>
+    </section>
+  </div>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
