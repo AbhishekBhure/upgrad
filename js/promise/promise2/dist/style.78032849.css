@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+  position: relative;
+  left: 20px;
+}
+
+#spinner {
+  position: absolute;
+  width: 28px;
+  top: 65px;
+  left: 120px;
+  display: none;
+}
+
+h5 {
+  position: absolute;
+  top: 20px;
+  color: red;
+  font-size: 12px;
+}
+
+#messages {
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+
+.message {
+  position: relative;
+  background-color: rgb(132, 130, 168);
+  padding: 15px;
+  margin-bottom: 15px;
+  color: #fff;
+  border: 1px solid rgb(238, 215, 215);
+  width: 600px;
+}
+
+.user-name {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-weight: bold;
+  text-shadow: 0px 0px 0px rgb(152, 152, 152);
+  font-size: 14px;
+}
+
+.message-text {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.comments {
+  position: relative;
+  color: #000;
+  left: 10px;
+  top: 10px;
+}
+
+.comment {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  padding-right: 5px;
+  width: 585px;
+  margin-bottom: 2px;
+  background-color: rgb(222, 211, 234);
+}
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
