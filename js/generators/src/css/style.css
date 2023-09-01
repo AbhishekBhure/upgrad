@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+  position: relative;
+  left: 12px;
+}
+
+.form {
+  position: relative;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(238, 238, 238);
+  width: 350px;
+}
+
+.element {
+  position: relative;
+  padding: 10px;
+  display: flex;
+}
+
+.label {
+  width: 80%;
+}
+
+button[type='submit'] {
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  width: 140px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: rgb(119, 79, 79);
+}
+
+input {
+  width: 100px;
+  text-align: center;
+}
+
+.controls {
+  position: relative;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(238, 238, 238);
+  width: 350px;
+  margin-top: 5px;
+  display: flex;
+  visibility: hidden;
+}
+
+.controls > button {
+  margin: 10px;
+  width: 50%;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.controls > button:disabled {
+  background-color: rgb(136, 136, 136);
+}
+
+.table,
+.table-details {
+  position: relative;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(238, 238, 238);
+  width: 350px;
+  margin-top: 5px;
+  visibility: hidden;
+}
+
+.table-details {
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+
+.row {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 2px;
+}

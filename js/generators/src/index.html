@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your JavaScript Playground</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1>Table Factory</h1>
+      <div class="form">
+        <div class="element">
+          <div class="label">Multiplicand</div>
+          <div class="form-field"><input type="number" name="multiplicand" value="2" /></div>
+        </div>
+
+        <div class="element">
+          <div class="label">Multiplier Limit (1 to n)</div>
+          <div class="form-field"><input type="number" name="multiplierLimit" value="10" /></div>
+        </div>
+
+        <div class="element">
+          <div class="label">Playback Delay (ms)</div>
+          <div class="form-field"><input type="number" name="delay" value="0" /></div>
+        </div>
+
+        <div class="element">
+          <div class="form-field"><button type="submit" id="createBtn">Create Iterable</button></div>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="stepThrough">Step >></button>
+        <button id="entireTable">Entire Table</button>
+      </div>
+      <div class="table-details"></div>
+      <div class="table">
+        <!-- <div class="row">7 x 10 = 70</div> -->
+      </div>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
