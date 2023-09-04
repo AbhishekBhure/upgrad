@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+  position: relative;
+  left: 20px;
+}
+
+.products {
+  position: relative;
+  top: 20px;
+  background-color: rgb(120, 120, 120);
+  width: 500px;
+  padding: 10px;
+}
+
+.product {
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 2px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.prod-name {
+  width: 80%;
+}
+
+.total > .product {
+  background-color: rgb(255, 212, 21);
+  font-weight: bold;
+}
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
