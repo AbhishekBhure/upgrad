@@ -34,3 +34,34 @@
   background-color: rgb(255, 212, 21);
   font-weight: bold;
 }
+
+.add-product-form {
+  position: relative;
+  background-color: rgb(91, 91, 91);
+  width: 520px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.add-product-form input {
+  display: block;
+  font-size: 20px;
+  margin: 2px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 498px;
+}
+.add-product-form button {
+  margin: 10px;
+  padding: 2px;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 20px;
+}
+
+.delete-btn > a {
+  text-decoration: none;
+  color: black;
+}

@@ -6,7 +6,7 @@
     "dev": "cross-env concurrently \"npm:dev-server\" \"npm:json-server\"",
     "dev-server": "cross-env parcel src/index.html",
     "build": "cross-env parcel build src/index.html",
-    "json-server": "cross-env json-server -p 3000 ./db/database.js --watch"
+    "json-server": "cross-env json-server -p 3000 ./db/data.json --watch"
   },
   "browserslist": [
     "last 1 Chrome versions"

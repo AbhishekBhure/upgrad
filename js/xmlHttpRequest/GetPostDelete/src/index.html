@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your JavaScript Playground</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <h1>Shopping Cart</h1>
+    <form name="add-product">
+      <div class="add-product-form">
+        <input type="text" name="product" placeholder="Product" />
+        <input type="number" name="price" placeholder="Price" value="0" />
+        <button name="addProductBtn">Add Product</button>
+      </div>
+    </form>
+    <div class="products">
+      <div class="list"></div>
+      <div class="total"></div>
+    </div>
+  </div>
+  <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
