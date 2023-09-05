@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+  position: relative;
+  left: 20px;
+}
+
+.form {
+  position: relative;
+  padding: 15px;
+  background-color: rgb(236, 236, 236);
+  width: 624px;
+  display: block;
+}
+
+input[name='fileToUpload'] {
+  background-color: #fff;
+  padding: 10px;
+  width: 604px;
+}
+
+progress {
+  width: 624px;
+}
+
+#uploadFileBtn {
+  position: relative;
+  margin-top: 20px;
+  background-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  color: #fff;
+  border: none;
+  display: block;
+}
+
+.filesList {
+  position: relative;
+  top: 20px;
+}
+
+.filesList > table {
+  width: 656px;
+}
+
+.filesList table > thead th {
+  background-color: rgb(110, 110, 110);
+  padding: 10px;
+  color: white;
+}
+
+thead th {
+  width: 200px;
+}
+
+tbody {
+  text-align: center;
+}
+
+tbody td {
+  font-size: 15px;
+  padding: 10px;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+}
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
