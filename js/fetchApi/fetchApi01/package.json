@@ -1,0 +1,26 @@
+{
+  "name": "knowledgehut-js-template",
+  "version": "1.0.0",
+  "description": "A starter kit for building websites by KnowledgeHut for the JavaScript course",
+  "scripts": {
+    "dev": "cross-env concurrently \"npm:dev-server\" \"npm:json-server\"",
+    "dev-server": "cross-env parcel src/index.html",
+    "build": "cross-env parcel build src/index.html",
+    "json-server": "cross-env json-server -p 3000 ./db/data.json --watch"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "author": "Sachin Bhatnagar <sachin@knowledgehut.co> (https://www.knowledgehut.com)",
+  "license": "AFL-3.0",
+  "devDependencies": {
+    "@babel/core": "7.13.8",
+    "@babel/preset-env": "7.13.8",
+    "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
+    "faker": "^5.5.3",
+    "json-server": "^0.16.3",
+    "parcel-bundler": "1.12.4",
+    "uuid": "^3.4.0"
+  }
+}
