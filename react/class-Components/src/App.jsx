@@ -2,6 +2,7 @@ import React from "react";
 import Timer from "./components/Timer";
 import Child from "./components/Child";
 import Input from "./components/Input";
+import UserList from "./hoc/UserList";
 
 class App extends React.Component {
   constructor(props) {
@@ -59,6 +60,10 @@ class App extends React.Component {
               <p className="text-white ml-5 pt-4">{value.toUpperCase()}</p>
             )}
           />
+        </div>
+
+        <div>
+          <UserList />
         </div>
       </>
     );
