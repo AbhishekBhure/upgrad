@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Product 1",
+      "cost": 29.99,
+      "description": "This is the first product description.",
+      "review": [
+        "Great product! Very satisfied."
+      ],
+      "likes": 76
+    },
+    {
+      "id": 2,
+      "title": "Product 2",
+      "cost": 19.99,
+      "description": "A budget-friendly option for your needs.",
+      "review": [
+        "It's okay, does the job."
+      ],
+      "likes": 12
+    },
+    {
+      "id": 3,
+      "title": "Product 3",
+      "cost": 49.99,
+      "description": "Our premium product with advanced features.",
+      "review": [
+        "Absolutely amazing! Worth every penny."
+      ],
+      "likes": 98
+    }
+  ]
+}
