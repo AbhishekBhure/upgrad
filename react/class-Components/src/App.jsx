@@ -4,6 +4,7 @@ import Child from "./components/Child";
 import Input from "./components/Input";
 import UserList from "./hoc/UserList";
 import WordCount from "./components/WordCount";
+import Todo from "./components/Todo";
 
 class App extends React.Component {
   constructor(props) {
@@ -68,6 +69,9 @@ class App extends React.Component {
         </div>
         <div>
           <WordCount />
+        </div>
+        <div>
+          <Todo />
         </div>
       </>
     );
