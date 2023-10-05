@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px;
+  margin: auto;
+}
+
+.product {
+  position: relative;
+  height: 50px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+.product-name {
+  position: absolute;
+  top: 25px;
+}
+
+.product-cost {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  font-weight: bold;
+}
+
+.cat-btn {
+  position: relative;
+  display: inline-block;
+  background-color: #000;
+  border-radius: 12px;
+  padding: 8px;
+  color: #fff;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cat-btn-on {
+  background-color: rgb(163, 31, 31);
+}
+
+.categories {
+  position: relative;
+  text-align: center;
+}
+
+.error {
+  position: absolute;
+  width: 400px;
+  height: 351px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.pick-text {
+  position: absolute;
+  width: 600px;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.3);
+  top: 100px;
+  text-align: center;
+}
+
+.reset-btn {
+  position: absolute;
+  background-color: rgb(196, 42, 42);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  top: 400px;
+  left: 175px;
+  display: inline-block;
+}
