@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>All Tasks</h1>
+    <ul>
+        <% todos.forEach(todo=> { %>
+            <li>
+                <%= todo.title %>
+                    <% if (todo.completed) { %>
+                        <span style="color: green">(Completed)</span>
+                        <% } else { %>
+                            <a href="/complete/<%= todo.id %>">Complete</a>
+                            <% } %>
+            </li>
+            <% }) %>
+    </ul>
+    <a href="/create"> Create Todo </a>
+</body>
+
+</html>
