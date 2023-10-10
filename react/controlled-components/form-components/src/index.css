@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.form-container {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 370px;
+  height: 663px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.form-fields {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  height: 300px;
+  width: 370px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.output {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 350px;
+  width: 370px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  left: 10px;
+  top: 320px;
+}
+
+.field-holder {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  font-size: 20px;
+  width: 320px;
+}
+
+.label {
+  position: relative;
+  font-size: 12px;
+}
+
+.ot-field {
+  position: relative;
+  color: #fff;
+  font-size: 17px;
+  padding: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.red {
+  border: 1px solid red;
+}
