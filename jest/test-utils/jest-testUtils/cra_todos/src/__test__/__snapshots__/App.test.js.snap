@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the App Renders a snapshot successfully! 1`] = `"<div class=\\"app\\"><div class=\\"title\\">Tasks</div><div class=\\"add-todo\\"><input type=\\"text\\" placeholder=\\"Add a task\\" value=\\"\\"></div><div class=\\"list\\"><div class=\\"list-item\\"><div class=\\"task\\">Book Concert Tickets</div><div class=\\"status-btn\\"></div><div class=\\"delete-btn\\">X</div></div><div class=\\"list-item\\"><div class=\\"task\\">Write an article on react</div><div class=\\"status-btn status-done\\"></div><div class=\\"delete-btn\\">X</div></div></div></div>"`;
