@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the App Renders successfully 1`] = `
+<DocumentFragment>
+  <div
+    class="app"
+  >
+    <div
+      class="title"
+    >
+      Tasks
+    </div>
+    <div
+      class="add-todo"
+    >
+      <input
+        placeholder="Add a task"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="list"
+    >
+      <div
+        class="list-item"
+      >
+        <div
+          class="task"
+        >
+          Book concert tickets
+        </div>
+        <div
+          class="status-btn"
+        />
+        <div
+          class="delete-btn"
+        >
+          X
+        </div>
+      </div>
+      <div
+        class="list-item"
+      >
+        <div
+          class="task"
+        >
+          Buy a new iPhone
+        </div>
+        <div
+          class="status-btn status-done"
+        />
+        <div
+          class="delete-btn"
+        >
+          X
+        </div>
+      </div>
+      <div
+        class="list-item"
+      >
+        <div
+          class="task"
+        >
+          Write an article on React
+        </div>
+        <div
+          class="status-btn status-done"
+        />
+        <div
+          class="delete-btn"
+        >
+          X
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Testing the App Renders successfully 2`] = `
+<DocumentFragment>
+  <div
+    class="app"
+  >
+    <div
+      class="title"
+    >
+      Tasks
+    </div>
+    <div
+      class="add-todo"
+    >
+      <input
+        placeholder="Add a task"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="list"
+    >
+      <div
+        class="list-item"
+      >
+        <div
+          class="task"
+        >
+          Book concert tickets
+        </div>
+        <div
+          class="status-btn"
+        />
+        <div
+          class="delete-btn"
+        >
+          X
+        </div>
+      </div>
+      <div
+        class="list-item"
+      >
+        <div
+          class="task"
+        >
+          Buy a new iPhone
+        </div>
+        <div
+          class="status-btn status-done"
+        />
+        <div
+          class="delete-btn"
+        >
+          X
+        </div>
+      </div>
+      <div
+        class="list-item"
+      >
+        <div
+          class="task"
+        >
+          Write an article on React
+        </div>
+        <div
+          class="status-btn status-done"
+        />
+        <div
+          class="delete-btn"
+        >
+          X
+        </div>
+      </div>
+      <div
+        class="list-item"
+      >
+        <div
+          class="task"
+        >
+          This is a brand new task
+        </div>
+        <div
+          class="status-btn"
+        />
+        <div
+          class="delete-btn"
+        >
+          X
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
