@@ -6,5 +6,7 @@ html
         .container
             h1#admin-title BlogChef - Dashboard
             #admin-nav
-            h3#user-name Welocme, Joe
-            a(href="/admin/logout" id="logOutBtn") Logout
+                h3#user-name="Welcome, " + username
+                a(href="/admin/logout" id="logOutBtn") Logout
+            #content 
+                include partials/postCard.pug
