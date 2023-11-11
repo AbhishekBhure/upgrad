@@ -373,3 +373,13 @@ GET - /mockServiceWorker.js - Wed, 08 Nov 2023 17:53:22 GMT - 3.324 ms
 GET - /mockServiceWorker.js - Wed, 08 Nov 2023 17:58:52 GMT - 3.905 ms
 GET - /mockServiceWorker.js - Wed, 08 Nov 2023 18:04:23 GMT - 2.257 ms
 GET - /mockServiceWorker.js - Wed, 08 Nov 2023 18:09:53 GMT - 0.672 ms
+GET - / - Fri, 10 Nov 2023 14:29:20 GMT - 12.192 ms
+GET - /post - Fri, 10 Nov 2023 14:30:59 GMT - 533.313 ms
+POST - /post - Fri, 10 Nov 2023 14:31:09 GMT - 5.131 ms
+POST - /api/post - Fri, 10 Nov 2023 14:31:36 GMT - 18.635 ms
+POST - /api/post - Fri, 10 Nov 2023 14:37:58 GMT - 206.001 ms
+POST - /api/post - Fri, 10 Nov 2023 14:39:25 GMT - 516.196 ms
+POST - /api/post - Fri, 10 Nov 2023 14:39:55 GMT - 100.201 ms
+DELETE - /api/post - Fri, 10 Nov 2023 14:40:04 GMT - 4.118 ms
+DELETE - /api/post/6 - Fri, 10 Nov 2023 14:40:25 GMT - 3.225 ms
+DELETE - /api/post/6 - Fri, 10 Nov 2023 14:40:36 GMT - 2.759 ms
