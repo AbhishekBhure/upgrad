@@ -1,0 +1,26 @@
+{
+  "name": "blog-chef",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin",
+    "dev": "nodemon -r dotenv/config ./bin"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bad-words": "^3.0.3",
+    "bcrypt": "^4.0.1",
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.10",
+    "morgan": "^1.10.0",
+    "pug": "^2.0.4"
+  }
+}
