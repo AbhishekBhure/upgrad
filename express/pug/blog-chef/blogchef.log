@@ -55,3 +55,10 @@ POST - /api/verify - Wed, 15 Nov 2023 14:46:01 GMT - 231.663 ms
 GET - /api/post/65535d440747f437d0177864 - Wed, 15 Nov 2023 14:48:40 GMT - 559.950 ms
 GET - /api/posts - Wed, 15 Nov 2023 14:48:58 GMT - 479.706 ms
 GET - /api/post/65535d440747f437d0177864 - Wed, 15 Nov 2023 14:49:00 GMT - 2.260 ms
+POST - /api/login - Wed, 15 Nov 2023 18:59:46 GMT - 36.907 ms
+POST - /api/signup - Wed, 15 Nov 2023 19:00:04 GMT - 9.102 ms
+POST - /admin/signup - Wed, 15 Nov 2023 19:03:19 GMT - 38.680 ms
+GET - /admin/signup - Wed, 15 Nov 2023 19:03:27 GMT - 7805.853 ms
+POST - /admin/login - Wed, 15 Nov 2023 19:04:03 GMT - 9.938 ms
+GET - /admin/login - Wed, 15 Nov 2023 19:04:03 GMT - 31.471 ms
+POST - / - Wed, 15 Nov 2023 19:04:17 GMT - 6.023 ms
