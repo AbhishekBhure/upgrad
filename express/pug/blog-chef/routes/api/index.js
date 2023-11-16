@@ -12,6 +12,12 @@ import {
   servePostsFromCache,
   serverPostFromcache,
 } from "../../controllers/cache";
+import {
+  jwtValidation,
+  loginUserValidation,
+  signUpUserValidation,
+  storePostValidation,
+} from "../../utils/validation";
 
 const router = Router();
 
@@ -19,11 +25,11 @@ router.get("/posts", servePostsFromCache(), getPosts);
 router
   .route("/post/:postId?")
   .get(serverPostFromcache(), getPost)
-  .post(protectApi, storePost)
+  .post(protectApi, storePostValidation, storePost)
   .delete(protectApi, deletePost);
-router.post("/login", loginUser);
-router.post("/signup", signUpUser);
-router.post("/verify", verify);
+router.post("/login", loginUserValidation, loginUser);
+router.post("/signup", signUpUserValidation, signUpUser);
+router.post("/verify", jwtValidation, verify);
 router.use(catchAll);
 
 export default router;
