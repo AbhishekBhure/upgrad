@@ -24,6 +24,7 @@
     "pug": "^2.0.4",
     "redis": "^3.0.2",
     "connect-redis": "^4.0.4",
-    "memorystore": "^1.6.2"
+    "memorystore": "^1.6.2",
+    "express-validator": "^6.5.0"
   }
 }
