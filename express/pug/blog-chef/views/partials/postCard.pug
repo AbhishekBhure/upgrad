@@ -4,6 +4,7 @@ each post in posts
     h3="by " + post.user.name
     p=post.content
     form(method="post" action="/admin/moderate")
+      input(type="hidden" name="_csrf" value=csrfToken)
       input(type="hidden" name="postId" value=post.id)
       button.adminBtn(name="task" value="approve") Approve
       button.adminBtn(name="task" value="decline") Decline
