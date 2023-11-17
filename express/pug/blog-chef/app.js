@@ -8,10 +8,12 @@ import home from "./routes/home";
 import admin from "./routes/admin";
 import api from "./routes/api";
 import connectToDb from "./db";
+import helmet from "helmet";
 
 const app = express();
 const logFile = join(__dirname, "blogchef.log");
 
+app.use(helmet());
 app.use(compression());
 app.use("/assets", express.static(join(__dirname, "public")));
 app.use(express.static(join(__dirname, "public", "client")));
