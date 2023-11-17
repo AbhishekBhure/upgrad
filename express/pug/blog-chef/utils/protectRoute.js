@@ -1,4 +1,5 @@
 import { verifyUser } from "../controllers/user";
+import csurf from "csurf";
 
 const protectRoute =
   (redirectTo = "/") =>
@@ -12,5 +13,7 @@ const protectRoute =
       res.redirect(redirectTo);
     }
   };
+
+export const csrfProtection = csurf();
 
 export default protectRoute;
