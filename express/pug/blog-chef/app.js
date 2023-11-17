@@ -21,11 +21,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use("/admin", session(app));
 app.use(morgan(":method - :url - :date - :response-time ms"));
-app.use(
-  morgan(":method - :url - :date - :response-time ms", {
-    stream: createWriteStream(logFile, { flags: "a" }),
-  })
-);
+// app.use(
+//   morgan(":method - :url - :date - :response-time ms", {
+//     stream: createWriteStream(logFile, { flags: "a" }),
+//   })
+// );
 
 app.set("view engine", "pug");
 
