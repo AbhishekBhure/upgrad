@@ -1,3 +1,5 @@
-export default function getAllRestaurants(req, res) {
+function getAllRestaurants(req, res) {
   res.json({ mesage: "All restaurant" });
 }
+
+module.exports = { getAllRestaurants };
