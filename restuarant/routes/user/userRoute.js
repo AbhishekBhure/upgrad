@@ -1,11 +1,12 @@
 const express = require("express");
 const passport = require("passport");
 const {
-  default: getAllUsers,
+  getAllUsers,
+  signupUser,
 } = require("../../controller/user/userController");
 
 const router = express.Router();
 
-router.get("/users", getAllUsers);
+router.get("/", getAllUsers).post("/sign-up", signupUser);
 
 module.exports = router;
