@@ -15,6 +15,7 @@ const RestaurantSchema = new Schema({
   },
   reviewCount: {
     type: Number,
+    default: 0,
     minimum: 0,
     maximum: 0,
   },

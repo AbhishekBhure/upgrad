@@ -20,6 +20,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(passport.initialize());
+require("./passport.js")(passport);
 app.use(bodyPaser.urlencoded({ extended: true }));
 app.use(bodyPaser.json());
 

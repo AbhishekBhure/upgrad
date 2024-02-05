@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ReviewSchema = new Schema({
-  resId: {
+  restId: {
     type: String,
     required: true,
   },
@@ -11,7 +11,12 @@ const ReviewSchema = new Schema({
     type: String,
     required: true,
   },
-  rating: { type: Number, default: 0, minimum: 0, maximum: 5 },
+  rating: {
+    type: Number,
+    default: 0,
+    minimum: 0,
+    maximum: 5,
+  },
   description: {
     type: String,
     required: true,
